@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_qrScan"
+        android:layout_width="260dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ramka" />
+
+    <EditText
+        android:id="@+id/id_wifi_data"
+        android:layout_width="207dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+
+        android:ems="10"
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_qrScan" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="359dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_qrScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_skan_qr_code" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonenable"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_wifi_data" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonoff"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_connect" />
+
+    <ImageButton
+        android:id="@+id/id_connect"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/connection"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+
+</android.support.constraint.ConstraintLayout>
